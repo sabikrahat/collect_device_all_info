@@ -1,0 +1,10 @@
+flutter clean
+flutter pub get
+flutter build web --release
+cd build/web
+git init
+git remote add origin https://github.com/sabikrahat/collect_device_all_info
+git checkout -b gh-pages
+git add --all
+git commit -m "update"
+git push origin gh-pages -f
